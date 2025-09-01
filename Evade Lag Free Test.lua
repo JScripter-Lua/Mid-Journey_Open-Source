@@ -683,7 +683,7 @@ getgenv().bhopMode = "Acceleration"
 getgenv().bhopAccelValue = -0.1
 
 MainTab:CreateToggle({
-    Name = "Bhop",
+    Name = "Bunny hop",
     CurrentValue = false,
     Flag = "BhopToggle",
     Callback = function(state)
@@ -692,7 +692,7 @@ MainTab:CreateToggle({
 })
 
 MainTab:CreateDropdown({
-    Name = "Bhop Mode",
+    Name = "Bunny hop Mode",
     Options = {"Acceleration", "No Acceleration"},
     CurrentOption = {"Acceleration"},
     MultipleOptions = false,
@@ -703,7 +703,7 @@ MainTab:CreateDropdown({
 })
 
 MainTab:CreateSlider({
-    Name = "Bhop Acceleration",
+    Name = "Bunny hop Acceleration",
     Range = {-5, -0.01},
     Increment = 0.01,
     Suffix = "",
